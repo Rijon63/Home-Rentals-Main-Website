@@ -1,0 +1,53 @@
+{
+  "name": "home-rentals",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Home Rentals - Premium Real Estate Platform with AI-Powered Insights",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\" \"cd admin && npm run dev\"",
+    "build": "cd backend && npm run build && cd ../frontend && npm run build && cd ../admin && npm run build",
+    "start": "cd backend && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "workspaces": [
+    "backend",
+    "frontend",
+    "admin"
+  ],
+  "keywords": [
+    "real-estate",
+    "property",
+    "ai",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "dependencies": {
+    "@react-spring/web": "^10.0.1",
+    "axios": "^1.11.0",
+    "chart.js": "^4.5.0",
+    "crypto-js": "^4.2.0",
+    "csv-parse": "^6.1.0",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.5.0",
+    "framer-motion": "^12.23.9",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.525.0",
+    "nodemailer": "^7.0.3",
+    "python-shell": "^5.0.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-hot-toast": "^2.5.2",
+    "react-leaflet": "^4.2.1",
+    "react-router": "^7.8.0",
+    "react-router-dom": "^7.8.0",
+    "react-tooltip": "^5.29.1",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^11.1.0"
+  }
+}
